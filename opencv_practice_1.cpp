@@ -63,7 +63,7 @@ int maska(Mat image) {
 int main() {
 	setlocale(0, "");
 
-	Mat image = imread("C:/Users/VALev/OneDrive/Рабочий стол/Политех/8 семестр/Лабы openCV/geometry_figure/image_lab1.jpg");
+	Mat image = imread("C:/Users/VALev/OneDrive/Рабочий стол/Политех/8 семестр/Лабы openCV/geometry_figure/image_openCV_lab1.jpg");
 	check_open_image(image);
 	geom_figures(image);
 	split_on_pieces(image);
