@@ -12,6 +12,7 @@ int check_open_image(Mat image) {
 		cout << "Ошибка! Не удалось открыть изображение!" << endl;
 		return -1;
 	}
+	return 0;
 }
 
 int geom_figures(Mat image) {
@@ -35,6 +36,7 @@ int geom_figures(Mat image) {
 	rectangle(image, Point(578, 338), Point(582, 342), Scalar(0, 0, 0), -1);
 	
 	imshow("Image", image);
+	return 0;
 }
 
 int split_on_pieces(Mat image) {
@@ -50,6 +52,7 @@ int split_on_pieces(Mat image) {
 	imshow("Piece 2", piece_2);
 	imshow("Piece 3", piece_3);
 	imshow("Piece 4", piece_4);
+	return 0;
 }
 
 int maska(Mat image) {
@@ -58,6 +61,7 @@ int maska(Mat image) {
 	Mat itog;
 	image.copyTo(itog, mask);
 	imshow("Mask Result", itog);
+	return 0;
 }
 
 int main() {
