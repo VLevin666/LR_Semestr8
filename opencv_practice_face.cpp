@@ -1,4 +1,4 @@
-﻿#include <opencv2/core.hpp>
+#include <opencv2/core.hpp>
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
@@ -18,7 +18,7 @@ int main() {
     unsigned int start_prog = clock();
     setlocale(0, "");
 
-    VideoCapture cap("ZUA.mp4");
+    VideoCapture cap("C:/Users/VALev/OneDrive/Рабочий стол/Политех/8 семестр/Лабы openCV/practice/practice/ZUA.mp4");
     if (!cap.isOpened()) {
         cout << "Ошибка!" << endl;
         return -1;
@@ -30,19 +30,19 @@ int main() {
 
 
     CascadeClassifier face_cascade_eye;
-    if (!face_cascade_eye.load(samples::findFile("haarcascade_eye.xml"))) {
+    if (!face_cascade_eye.load(samples::findFile("C:/Users/VALev/OneDrive/Рабочий стол/Политех/8 семестр/Лабы openCV/practice/practice/haarcascade_eye.xml"))) {
         cout << "Ошибка! Файл <глаза>" << endl;
         return -1;
     }
 
     CascadeClassifier face_cascade_face;
-    if (!face_cascade_face.load(samples::findFile("haarcascade_frontalface_default.xml"))) {
+    if (!face_cascade_face.load(samples::findFile("C:/Users/VALev/OneDrive/Рабочий стол/Политех/8 семестр/Лабы openCV/practice/practice/haarcascade_frontalface_default.xml"))) {
         cout << "Ошибка! Файл <лицо>" << endl;
         return -1;
     }
 
     CascadeClassifier face_cascade_smile;
-    if (!face_cascade_smile.load(samples::findFile("haarcascade_smile.xml"))) {
+    if (!face_cascade_smile.load(samples::findFile("C:/Users/VALev/OneDrive/Рабочий стол/Политех/8 семестр/Лабы openCV/practice/practice/haarcascade_smile.xml"))) {
         cout << "Ошибка! Файл <улыбка>" << endl;
         return -1;
     }
