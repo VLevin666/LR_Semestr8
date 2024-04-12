@@ -27,4 +27,4 @@
 
 **Файлы**: ```practice_face.cpp```
 
-**Результат**: Время работы *opencv_practice_face.cpp* = 169сек. Время работы *practice_face.cpp* = 118сек. Выигрыш по времени ~30%.
+**Результат**: Время работы *opencv_practice_face.cpp* = 169сек. Время работы *practice_face.cpp* = 117сек. Выигрыш по времени ~30%.
